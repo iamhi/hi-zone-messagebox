@@ -22,5 +22,11 @@
             <artifactId>hi-zone-messagebox-in-adapter</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.github.iamhi.hizone</groupId>
+            <artifactId>hi-zone-messagebox-config</artifactId>
+            <version>${project.version}</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 </project>
