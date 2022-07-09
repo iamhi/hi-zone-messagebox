@@ -1,7 +1,7 @@
-package com.github.iamhi.hizone.messagebox.out.mongodb.adapters;
+package com.github.iamhi.hizone.messagebox.out.postgres.adapters;
 
-import com.github.iamhi.hizone.messagebox.out.mongodb.MessageRepository;
-import com.github.iamhi.hizone.messagebox.out.mongodb.models.MessageEntity;
+import com.github.iamhi.hizone.messagebox.out.postgres.MessageRepository;
+import com.github.iamhi.hizone.messagebox.out.postgres.models.MessageEntity;
 import com.github.iamhi.hizone.messagebox.outadapter.InsidiousMessageRepositoryAdapter;
 import com.github.iamhi.hizone.messagebox.outadapter.models.MessageDto;
 import org.springframework.stereotype.Service;

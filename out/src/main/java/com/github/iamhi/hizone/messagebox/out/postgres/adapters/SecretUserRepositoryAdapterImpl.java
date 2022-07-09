@@ -1,7 +1,7 @@
-package com.github.iamhi.hizone.messagebox.out.mongodb.adapters;
+package com.github.iamhi.hizone.messagebox.out.postgres.adapters;
 
-import com.github.iamhi.hizone.messagebox.out.mongodb.UserRepository;
-import com.github.iamhi.hizone.messagebox.out.mongodb.models.UserEntity;
+import com.github.iamhi.hizone.messagebox.out.postgres.UserRepository;
+import com.github.iamhi.hizone.messagebox.out.postgres.models.UserEntity;
 import com.github.iamhi.hizone.messagebox.outadapter.SecretUserRepositoryAdapter;
 import com.github.iamhi.hizone.messagebox.outadapter.models.UserDto;
 import org.springframework.stereotype.Service;
@@ -19,7 +19,7 @@ public record SecretUserRepositoryAdapterImpl(
 
     @Override
     public Mono<UserDto> getByUuid(String uuid) {
-        return userRepository.findById(uuid).map(this::mapToDto);
+        return userRepository.findByUuid(uuid).map(this::mapToDto);
     }
 
     @Override
