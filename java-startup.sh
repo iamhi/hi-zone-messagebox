@@ -1,0 +1,1 @@
+nohup java -jar -Dspring.profiles.active=local ./service/target/hi-zone-messagebox-local.jar &

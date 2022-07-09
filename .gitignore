@@ -33,3 +33,5 @@ build/
 .vscode/
 
 application-docker.properties
+application-local.properties
+nohup.out
