@@ -1,7 +1,7 @@
 #
 # Build stage
 #
-FROM maven:3.8.5-openjdk-18-slim AS build
+FROM maven:3.8.5-openjdk-17-slim AS build
 
 # Set the working directory to /app
 WORKDIR /app
@@ -23,7 +23,7 @@ RUN mvn -Dmaven.test.skip=true package -P docker && cp service/target/messagebox
 #
 # Package stage
 #
-FROM eclipse-temurin:18.0.1_10-jre-jammy
+FROM eclipse-temurin:17.0.1_10-jre-jammy
 
 # set deployment directory
 WORKDIR /app

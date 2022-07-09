@@ -24,7 +24,7 @@
 	<name>messagebox</name>
 	<description>Hi zone message box</description>
 	<properties>
-		<java.version>18</java.version>
+		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
