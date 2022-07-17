@@ -2,8 +2,7 @@
 <databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd">
-
-    <include file="classpath:db/message/message-changelog-1.0.xml"/>
-    <include file="classpath:db/message/message-changelog-1.1.xml"/>
-    <include file="classpath:db/message/message-changelog-1.2.xml"/>
+    <changeSet id="1.0_1" author="IamHi">
+        <dropUniqueConstraint tableName="message_entity" constraintName="message_entity_content_key" />
+    </changeSet>
 </databaseChangeLog>
