@@ -3,10 +3,6 @@
                    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd">
     <changeSet id="1.0_1" author="IamHi">
-        <update tableName="message_entity">
-            <column name="content" type="VARCHAR(512)">
-                <constraints nullable="false" />
-            </column>
-        </update>
+        <dropNotNullConstraint tableName="message_entity" columnName="content" />
     </changeSet>
 </databaseChangeLog>
