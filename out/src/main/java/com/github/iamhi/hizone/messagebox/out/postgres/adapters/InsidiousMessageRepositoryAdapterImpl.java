@@ -20,7 +20,7 @@ public record InsidiousMessageRepositoryAdapterImpl(
 
     @Override
     public Flux<MessageDto> getMessages(String boxUuid) {
-        return messageRepository.findByOwningBoxUuid(boxUuid).map(this::toDto);
+        return messageRepository.findByOwningBoxUuidOrderByCreatedAtDesc(boxUuid).map(this::toDto);
     }
 
     MessageDto toDto(MessageEntity entity) {

@@ -6,5 +6,5 @@ import reactor.core.publisher.Flux;
 
 public interface MessageRepository extends ReactiveCrudRepository<MessageEntity, Integer> {
 
-    Flux<MessageEntity> findByOwningBoxUuid(String owningBoxUuid);
+    Flux<MessageEntity> findByOwningBoxUuidOrderByCreatedAtDesc(String owningBoxUuid);
 }
